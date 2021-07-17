@@ -1,0 +1,8 @@
+D:\Godot Projects\KnightsTale\.mono\temp\bin\Debug\KnightsTale.dll
+D:\Godot Projects\KnightsTale\.mono\temp\bin\Debug\KnightsTale.pdb
+D:\Godot Projects\KnightsTale\.mono\temp\obj\Debug\KnightsTale.csproj.AssemblyReference.cache
+D:\Godot Projects\KnightsTale\.mono\temp\obj\Debug\KnightsTale.AssemblyInfoInputs.cache
+D:\Godot Projects\KnightsTale\.mono\temp\obj\Debug\KnightsTale.AssemblyInfo.cs
+D:\Godot Projects\KnightsTale\.mono\temp\obj\Debug\KnightsTale.csproj.CoreCompileInputs.cache
+D:\Godot Projects\KnightsTale\.mono\temp\obj\Debug\KnightsTale.dll
+D:\Godot Projects\KnightsTale\.mono\temp\obj\Debug\KnightsTale.pdb
