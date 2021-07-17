@@ -8,6 +8,7 @@ public class NameType : Node2D
 	private Timer end_timer;
 	[Signal]
 	public delegate void NameChosen(String name);
+	private bool name_accepted = false;
 	public override void _Ready()
 	{
 		warning_label = GetNode<Label>("WarningLabel");
@@ -20,6 +21,8 @@ public class NameType : Node2D
 	//Setting the warning labels
 	private void _on_EnterButton_pressed()
 	{
+		if (name_accepted) return;
+
 		String le_text = line_edit.Text;
 		if (le_text.Length < 8)
 		{
@@ -94,6 +97,7 @@ public class NameType : Node2D
 			{
 				warning_label.Text = "Password accepted!";
 				end_timer.Start();
+				name_accepted = true;
 			}
 		}
 	}

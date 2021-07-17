@@ -30,7 +30,7 @@ public class KingsHall : Node2D
 
 		keys.SetPlayer(player);
 
-		cur_phase = 0;
+		cur_phase = 34;
 		//cur_phase = 12;
 		AdvancePhase();
 	}
@@ -351,14 +351,20 @@ public class KingsHall : Node2D
 			break;
 			case 34:
 			{
-				current_dialog1.QueueFree();
+				//TESTING
+				name_type.Visible = false;
+
+				//current_dialog1.QueueFree();
 				player.SetControlEnabled(true);
 				level_exit.Monitorable = true;
 			}
 			break;
 			case 35:
 			{
-				GD.Print("level exit");
+				
+				GlobalTrans gt = GetTree().Root.GetNode<GlobalTrans>(GlobalValues.global_trans);
+				gt.SetNextScene("res://Scene_Capital/Capital.tscn");
+				gt.TriggerSceneTransition();
 			}
 			break;
 			/**
@@ -417,13 +423,16 @@ public class KingsHall : Node2D
 		AdvancePhase();
 	}
 
-	private void _on_LevelExit_area_entered(object area)
+	private void _on_LevelExit_body_entered(object body)
 	{
 		AdvancePhase();
 	}
 
-
 }
+
+
+
+
 
 
 

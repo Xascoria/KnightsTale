@@ -13,6 +13,10 @@ config_version=4
 config/name="KnightsTale"
 config/icon="res://icon.png"
 
+[autoload]
+
+GlobalTrans="*res://Globals/GlobalTrans.tscn"
+
 [display]
 
 window/size/width=1280
