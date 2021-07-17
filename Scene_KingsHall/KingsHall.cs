@@ -30,7 +30,7 @@ public class KingsHall : Node2D
 
 		keys.SetPlayer(player);
 
-		cur_phase = 34;
+		cur_phase = 0;
 		//cur_phase = 12;
 		AdvancePhase();
 	}
